@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <script src="cal.js"></script>
+    <link rel="stylesheet" href="cal.css">
+    
+</head>
+<body style="background: linear-gradient(to left top,pink,blue);">
+
+<div id="calculator">
+    <input type="text" id="display" readonly class="input" style="background-color: rgba(128, 128, 128, 0.763);">
+    <button onclick="appendToDisplay('7')" class="num">7</button>
+    <button onclick="appendToDisplay('8')" class="num">8</button>
+    <button onclick="appendToDisplay('9')" class="num">9</button>
+    <button onclick="appendToDisplay('/')" class="color1">/</button>
+
+    <button onclick="appendToDisplay('4')" class="num">4</button>
+    <button onclick="appendToDisplay('5')" class="num">5</button>
+    <button onclick="appendToDisplay('6')" class="num">6</button>
+    <button onclick="appendToDisplay('*')" class="color2">*</button>
+
+    <button onclick="appendToDisplay('1')" class="num">1</button>
+    <button onclick="appendToDisplay('2')" class="num">2</button>
+    <button onclick="appendToDisplay('3')" class="num">3</button>
+    <button onclick="appendToDisplay('-')" class="color3">-</button>
+
+    <button onclick="appendToDisplay('0')" class="num">0</button>
+    <button onclick="appendToDisplay('.')" class="color6">.</button>
+    <button onclick="calculate()" class="color5">=</button>
+    <button onclick="appendToDisplay('+')" class="color4">+</button>
+
+    <button onclick="deleteLast()" style="grid-column: span 2;" class="delete">DEL</button>
+    <button onclick="clearDisplay()" class="clear">C</button>
+</div>
+
+
+</body>
+</html>  
